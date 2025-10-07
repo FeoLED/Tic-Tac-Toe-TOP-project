@@ -1,0 +1,91 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    background-color: black;
+}
+h1, h3{
+    color:limegreen;
+    text-shadow: 0px 0px 2px limegreen;
+}
+.playerDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border:inset 1px limegreen;
+    border-radius: 10px;
+}
+
+.playerButton{
+    font-size: medium;
+    padding:6px;
+    font-weight: bold;
+    border:inset 1px limegreen;
+    border-radius: 6px;
+    color:limegreen;
+    background-color: rgb(14, 27, 27);
+}
+.playerButton:hover{
+    box-shadow: 0px 0px 2px limegreen;
+    background-color: rgb(29, 37, 37);
+    
+}
+.board{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(100px,1fr));
+    grid-template-rows: repeat(3,minmax(100px,1fr));
+    gap:1px;
+}
+.board > div{
+    background-color: rgb(14, 27, 27);
+    box-shadow: 0px 0px 5px limegreen;
+    color:limegreen;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:12vh;
+}
+
+.winnerMessage{
+  position:absolute;
+  color:limegreen;
+  background-color: rgb(29, 37, 37);
+  font-size:10vh;
+  font-weight: bold;
+  text-shadow: 0px 0px 1px limegreen;
+  border:inset limegreen 1px;
+  border-radius:10px;
+  padding:5vh 5vw;
+  top:30vh;
+  text-align: center;
+  
+}
+.closeMessage{
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    border:solid 1px red;
+    color:rgb(248, 61, 61);
+    top:5px;
+    right: 5px;
+    border-radius: 45%;
+}
+.restartButton{
+    position:absolute;
+    bottom:5vh;
+    font-size: large;
+    letter-spacing: 1px;
+    padding:10px;
+    font-weight: bold;
+    border:inset 1px limegreen;
+    border-radius: 6px;
+    color:limegreen;
+    background-color: rgb(14, 27, 27);
+
+}
+.restartButton:hover{
+    box-shadow: 0px 0px 6px lightseagreen;
+}
